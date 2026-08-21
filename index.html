@@ -1,1 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Muslim Family Summit 2026 — Maryam Lemu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--mocha:#9E7E6F;--mocha-dark:#7A5D50;--mocha-deep:#4A362E;--mocha-pale:#F3EAE4;--mocha-border:rgba(158,126,111,0.28);--cream:#FBF7F3;--white:#FFFFFF;--ink:#2B211C;--mid:#5C4B43;--muted:#8C7C74;--border:#E7DDD5}
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Jost',system-ui,sans-serif;background:var(--white);color:var(--ink);overflow-x:hidden}
+  a{color:var(--mocha-dark)}a:hover{color:var(--mocha)}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(251,247,243,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw}
+  .nav-logo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:0.01em}
+  .nav-logo span{color:var(--mocha)}
+  .nav-tag{font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);padding:0.35rem 0.9rem;border-radius:2px}
+  .nav-cta-btn{background:var(--mocha);color:var(--white);padding:0.6rem 1.6rem;border-radius:2px;font-size:0.78rem;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;text-decoration:none;transition:background 0.2s}
+  .nav-cta-btn:hover{background:var(--mocha-deep);transform:translateY(-1px)}
+  .nav-cta-btn,.hero-actions .btn-primary{box-shadow:0 6px 18px -6px rgba(93,62,48,0.55)}
+  .hero-actions .btn-primary{background:var(--mocha);font-size:0.9rem;font-weight:600;padding:1.15rem 3rem;letter-spacing:0.12em;animation:ctaPulse 2.8s ease-in-out infinite}
+  .hero-actions .btn-primary:hover{background:var(--mocha-deep);transform:translateY(-2px);animation:none;box-shadow:0 12px 28px -8px rgba(93,62,48,0.6)}
+  @keyframes ctaPulse{0%,100%{box-shadow:0 6px 18px -6px rgba(93,62,48,0.5)}50%{box-shadow:0 10px 30px -6px rgba(158,126,111,0.75)}}
+  .btn-primary{background:var(--mocha-deep);color:var(--white);padding:1rem 2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s,transform 0.15s;display:inline-block}
+  .btn-primary:hover{background:var(--mocha);color:var(--white);transform:translateY(-1px)}
+  .btn-mocha{background:var(--mocha);color:var(--white);padding:1rem 2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s,transform 0.15s;display:inline-block}
+  .btn-mocha:hover{background:var(--mocha-dark);color:var(--white);transform:translateY(-1px)}
+  .btn-outline{border:1px solid var(--mocha-border);color:var(--ink);padding:1rem 2rem;font-size:0.82rem;font-weight:400;letter-spacing:0.09em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:border-color 0.2s,color 0.2s;display:inline-block}
+  .btn-outline:hover{border-color:var(--mocha);color:var(--mocha-dark)}
+  .section-tag{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mocha-dark);border:1px solid var(--mocha-border);padding:0.38rem 0.9rem;border-radius:2px;margin-bottom:1.4rem}
+  .hero{min-height:100vh;padding:9rem 5vw 4rem;display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--cream);position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:950px;height:650px;background:radial-gradient(ellipse,rgba(158,126,111,0.16) 0%,transparent 70%);pointer-events:none}
+  .hero-inner{position:relative;z-index:2;width:100%;max-width:900px}
+  .eyebrow{display:inline-flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem}
+  .eyebrow-line{width:28px;height:1px;background:var(--mocha)}
+  .eyebrow span{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--mocha-dark);font-weight:500}
+  .hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(3rem,6vw,5.4rem);font-weight:500;line-height:1.02;color:var(--ink);margin-bottom:1.4rem;letter-spacing:-0.01em}
+  .hero h1 em{font-style:italic;color:var(--mocha)}
+  .hero-sub{font-size:1.05rem;line-height:1.85;color:var(--mid);font-weight:300;max-width:620px;margin:0 auto 2rem}
+  .trailer{max-width:680px;margin:0 auto 2rem;aspect-ratio:16/9;border:1px solid var(--mocha-border);border-radius:4px;background:var(--mocha-pale);overflow:hidden}
+  .trailer iframe,.trailer video{width:100%;height:100%;border:0;display:block}
+  .trailer-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.9rem}
+  .tp-icon{width:56px;height:56px;border-radius:50%;border:1px solid var(--mocha);display:flex;align-items:center;justify-content:center;color:var(--mocha)}
+  .tp-icon svg{width:20px;height:20px;margin-left:3px}
+  .tp-text{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mocha-dark)}
+  .meta-row{display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
+  .meta-pill{display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;color:var(--mid);font-weight:400}
+  .meta-pill svg{width:15px;height:15px;color:var(--mocha)}
+  .meta-divider{width:1px;height:16px;background:var(--border)}
+  .countdown-wrap{margin-bottom:2.5rem}
+  .countdown-label{font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
+  .countdown{display:flex;justify-content:center;gap:0.85rem}
+  .cd-unit{background:var(--white);border:1px solid var(--border);border-radius:4px;padding:0.9rem 0;width:80px}
+  .cd-num{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.1rem;font-weight:600;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+  .cd-tag{font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-top:0.45rem}
+  .countdown.dark .cd-unit{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.14)}
+  .countdown.dark .cd-num{color:var(--white)}
+  .countdown.dark .cd-tag{color:rgba(255,255,255,0.5)}
+  .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+  .marquee-strip{background:var(--mocha-deep);padding:0.85rem 0;overflow:hidden}
+  .marquee-track{display:flex;gap:2.5rem;animation:scroll 26s linear infinite;width:max-content}
+  .m-item{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);white-space:nowrap;display:flex;align-items:center;gap:1.25rem}
+  .m-dot{width:4px;height:4px;background:var(--mocha);border-radius:50%;flex-shrink:0}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .intro{padding:7rem 5vw;background:var(--white)}
+  .intro-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:6rem;align-items:center;max-width:1300px;margin:0 auto}
+  .intro h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,3.6vw,3.6rem);font-weight:500;line-height:1.1;color:var(--ink);margin-bottom:1.5rem}
+  .intro h2 em{font-style:italic;color:var(--mocha)}
+  .intro p{font-size:1rem;line-height:1.9;color:var(--mid);font-weight:300;margin-bottom:1.4rem;max-width:520px}
+  .intro p strong{color:var(--ink);font-weight:500}
+  .pillar-list{list-style:none;display:flex;flex-direction:column;gap:1px}
+  .pillar-list li{background:var(--cream);border:1px solid var(--border);padding:1.3rem 1.5rem;display:flex;align-items:center;gap:1rem;font-size:0.95rem;color:var(--mid);transition:border-color 0.2s}
+  .pillar-list li:hover{border-color:var(--mocha-border)}
+  .tl-check{width:22px;height:22px;border-radius:50%;background:var(--mocha-pale);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--mocha-dark)}
+  .tl-check svg{width:11px;height:11px}
+  .convener{background:var(--cream);padding:6rem 5vw;display:grid;grid-template-columns:auto 1fr;gap:5rem;align-items:center}
+  .portrait{width:320px;height:400px;border:1px solid var(--mocha-border);border-radius:4px;overflow:hidden;background:var(--mocha-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .portrait img{width:100%;height:100%;object-fit:cover;display:block}
+  .portrait .ph{font-family:'Cormorant Garamond',Georgia,serif;font-size:3rem;color:var(--mocha);letter-spacing:0.08em}
+  .convener h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,3vw,3rem);font-weight:500;color:var(--ink);margin-bottom:1.25rem;line-height:1.15}
+  .convener h2 em{font-style:italic;color:var(--mocha)}
+  .convener p{font-size:0.97rem;line-height:1.9;color:var(--mid);font-weight:300;margin-bottom:1.3rem;max-width:600px}
+  .convener p strong{color:var(--ink);font-weight:500}
+  .speakers{padding:7rem 5vw;background:var(--white)}
+  .sp-head{text-align:center;margin-bottom:3.5rem}
+  .sp-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,3.5vw,3.5rem);font-weight:500;color:var(--ink)}
+  .sp-head h2 em{font-style:italic;color:var(--mocha)}
+  .sp-head p{font-size:0.95rem;color:var(--muted);font-weight:300;max-width:520px;margin:1rem auto 0;line-height:1.8}
+  .sp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1300px;margin:0 auto}
+  .sp-card{text-align:center}
+  .sp-img{aspect-ratio:3/4;border:1px solid var(--border);border-radius:3px;background:var(--mocha-pale);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:1rem;transition:border-color 0.25s}
+  .sp-card:hover .sp-img{border-color:var(--mocha)}
+  .sp-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .sp-img{position:relative;cursor:pointer}
+  .sp-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:1}
+  .sp-img img.cutout{object-fit:cover;object-position:center 33%;background:var(--mocha-pale)}
+  .sp-bio{z-index:2}
+  .sp-bio{position:absolute;inset:0;background:var(--mocha-deep);color:rgba(255,255,255,0.88);display:flex;align-items:center;padding:1.4rem;opacity:0;transition:opacity 0.3s ease;text-align:left;overflow:auto}
+  .sp-bio p{font-size:0.8rem;line-height:1.65;font-weight:300}
+  .sp-card:hover .sp-bio,.sp-card:focus .sp-bio,.sp-card:focus-within .sp-bio,.sp-card.open .sp-bio{opacity:1}
+  .sp-card{outline:none}
+  .sp-img .ph{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;color:var(--mocha);letter-spacing:0.06em}
+  .sp-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;font-weight:600;color:var(--ink);line-height:1.2}
+  .sp-card span{display:block;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--mocha-dark);margin-top:0.4rem}
+  .sp-note{text-align:center;margin-top:3rem;font-size:0.85rem;color:var(--muted);font-weight:300;letter-spacing:0.04em}
+  .programme{padding:7rem 5vw;background:var(--cream)}
+  .pg-head{margin-bottom:3.5rem}
+  .pg-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,3vw,3rem);font-weight:500;color:var(--ink);margin-top:0.75rem}
+  .pg-head h2 em{font-style:italic;color:var(--mocha)}
+  .days-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+  .day-col{background:var(--white);padding:2.25rem 1.75rem}
+  .day-label{font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mocha-dark);margin-bottom:0.4rem;display:block}
+  .day-date{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);margin-bottom:1.4rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+  .day-items{list-style:none;display:flex;flex-direction:column;gap:0.8rem}
+  .day-items li{font-size:0.85rem;color:var(--mid);line-height:1.55;font-weight:300;padding-left:0.95rem;position:relative}
+  .day-items li::before{content:'';position:absolute;left:0;top:0.55rem;width:4px;height:4px;background:var(--mocha);border-radius:50%}
+  .day-items li strong{color:var(--ink);font-weight:500}
+  .day-block{background:var(--white);border:1px solid var(--border);border-radius:4px;padding:2.5rem 2.25rem;margin-bottom:1.25rem}
+  .day-block:last-child{margin-bottom:0}
+  .day-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:0.5rem 1.25rem;padding-bottom:1.1rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem}
+  .day-head .day-label{margin-bottom:0}
+  .day-head .day-when{font-size:0.8rem;color:var(--mid);font-weight:300;letter-spacing:0.02em}
+  .day-block h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.85rem;font-weight:500;color:var(--ink);line-height:1.25;flex:1 1 100%;margin:0.15rem 0 0}
+  .day-lede{font-size:0.95rem;line-height:1.85;color:var(--mid);font-weight:300;max-width:660px;margin-bottom:1.6rem}
+  .day-lede+.day-lede{margin-top:-0.9rem}
+  .day-lede strong{color:var(--ink);font-weight:500}
+  .day-rooms{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+  .day-rooms.three{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:900px){.day-rooms,.day-rooms.three{grid-template-columns:1fr}}
+  .room{background:var(--sand,#fbf9f6);padding:1.6rem 1.5rem}
+  .room h4{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mocha-dark);font-weight:600;margin-bottom:0.7rem}
+  .room p{font-size:0.87rem;line-height:1.75;color:var(--mid);font-weight:300;margin:0}
+  .room p+p{margin-top:0.7rem}
+  .day-note{font-size:0.85rem;color:var(--mocha-dark);font-weight:400;letter-spacing:0.01em;margin-top:1.4rem}
+  .day-more{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows 0.35s ease,opacity 0.25s ease}
+  .day-more>div{overflow:hidden}
+  .day-block.open .day-more{grid-template-rows:1fr;opacity:1}
+  .day-toggle{margin-top:1.3rem;background:none;border:0;padding:0;font-family:inherit;font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mocha-dark);cursor:pointer;display:inline-flex;align-items:center;gap:0.5rem}
+  .day-toggle:hover{color:var(--ink)}
+  .day-toggle svg{width:11px;height:11px;transition:transform 0.3s}
+  .day-block.open .day-toggle svg{transform:rotate(45deg)}
+  @media(max-width:640px){.day-block{padding:1.9rem 1.4rem}.day-block h3{font-size:1.5rem}}
+  .tickets{padding:7rem 5vw;background:var(--white)}
+  .tk-head{text-align:center;margin-bottom:3rem}
+  .tk-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,3.5vw,3.5rem);font-weight:500;color:var(--ink)}
+  .tk-head h2 em{font-style:italic;color:var(--mocha)}
+  .tk-head p{font-size:0.95rem;color:var(--muted);font-weight:300;margin-top:0.85rem}
+  .tk-block{max-width:1200px;margin:0 auto 3.5rem}
+  .tk-block-title{display:flex;align-items:baseline;gap:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem}
+  .tk-block-title h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;font-weight:600;color:var(--ink)}
+  .tk-block-title span{font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
+  .tk-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .tk-cards.two{grid-template-columns:repeat(2,1fr);max-width:780px}
+  .tk-cards.day-cards{max-width:1200px;margin:0 auto}
+  .tk-from{font-size:0.9rem;color:var(--mid);font-weight:300;margin:-0.9rem 0 1.4rem}
+  .tk-from strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:600;color:var(--ink);vertical-align:-2px;margin-left:0.15rem}
+  .tk-from{margin-bottom:0.35rem}
+  .tk-reg{display:block;font-size:0.8rem;color:var(--mid);font-weight:300;margin-bottom:1.4rem}
+  .tk-day{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mocha-dark);display:block;margin-bottom:0.5rem}
+  .day-cards .tk-feat{margin-bottom:2rem}
+  .tk-card{border:1px solid var(--border);border-radius:4px;padding:2rem;display:flex;flex-direction:column;background:var(--white);position:relative;transition:border-color 0.2s,transform 0.2s}
+  .tk-card:hover{border-color:var(--mocha-border);transform:translateY(-2px)}
+  .tk-card.featured{border:2px solid var(--mocha);background:var(--mocha-pale)}
+  .tk-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--mocha);color:var(--white);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;padding:0.35rem 1rem;border-radius:2px;white-space:nowrap}
+  .tk-card h4{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;font-weight:600;color:var(--ink);margin-bottom:0.2rem}
+  .tk-sub{font-size:0.78rem;color:var(--muted);margin-bottom:1.4rem;letter-spacing:0.03em}
+  .tk-price{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.6rem;font-weight:600;color:var(--ink);line-height:1}
+  .tk-price sup{font-size:1.1rem;vertical-align:super}
+  .tk-reg{font-size:0.82rem;color:var(--muted);font-weight:300;margin:0.5rem 0 1.5rem}
+  .tk-reg s{color:var(--mocha-dark)}
+  .tk-feat{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.75rem}
+  .tk-feat li{display:flex;align-items:flex-start;gap:0.6rem;font-size:0.84rem;color:var(--mid);line-height:1.5;font-weight:300}
+  .tk-feat svg{width:15px;height:15px;flex-shrink:0;color:var(--mocha);margin-top:2px}
+  .tk-card .btn-primary,.tk-card .btn-mocha{width:100%;text-align:center;margin-top:auto}
+  .tk-note{text-align:center;font-size:0.85rem;color:var(--muted);font-weight:300;line-height:1.8;max-width:600px;margin:0 auto}
+  .donate{background:var(--mocha-deep);padding:7rem 5vw;position:relative;overflow:hidden}
+  .donate::before{content:'';position:absolute;top:-200px;right:-180px;width:620px;height:620px;background:radial-gradient(circle,rgba(158,126,111,0.35) 0%,transparent 70%);pointer-events:none}
+  .donate-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:flex-start;position:relative;z-index:2;max-width:1250px;margin:0 auto}
+  .donate .section-tag{color:#E8D8CF;border-color:rgba(255,255,255,0.22)}
+  .donate h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,3.5vw,3.4rem);font-weight:500;line-height:1.1;color:var(--white);margin-bottom:1.5rem}
+  .donate h2 em{font-style:italic;color:#DCC3B6}
+  .donate p{font-size:0.97rem;line-height:1.9;color:var(--white);font-weight:300;margin-bottom:1.3rem;max-width:520px}
+  .donate p strong{color:var(--white);font-weight:500}
+  .bank-row span{color:var(--white)!important}
+  .abroad-note{color:var(--white)!important}
+  .bank-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:2.25rem;margin-bottom:1.5rem}
+  .bank-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;color:var(--white);font-weight:600;margin-bottom:1.5rem}
+  .bank-row{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;padding:0.85rem 0;border-bottom:1px solid rgba(255,255,255,0.09)}
+  .bank-row:last-of-type{border-bottom:none}
+  .bank-row span{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);flex-shrink:0}
+  .bank-row strong{font-size:0.95rem;color:var(--white);font-weight:500;text-align:right;letter-spacing:0.02em}
+  .bank-row strong.acct{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;letter-spacing:0.08em}
+  .donate-actions{display:flex;flex-direction:column;gap:0.85rem}
+  .donate-actions .btn-mocha,.donate-actions .btn-outline{text-align:center}
+  .donate-actions .btn-outline{border-color:rgba(255,255,255,0.25);color:rgba(255,255,255,0.75)}
+  .donate-actions .btn-outline:hover{border-color:#DCC3B6;color:#DCC3B6}
+  .abroad-note{font-size:0.8rem;color:rgba(255,255,255,0.35);font-weight:300;line-height:1.7;margin-top:0.5rem}
+  .faq{padding:7rem 5vw;background:var(--white)}
+  .faq-head{margin-bottom:3rem}
+  .faq-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,3vw,3rem);font-weight:500;color:var(--ink);margin-top:0.75rem}
+  .faq-head h2 em{font-style:italic;color:var(--mocha)}
+  .faq-list{max-width:760px;display:flex;flex-direction:column;gap:1px}
+  .faq-item{border:1px solid var(--border);border-radius:2px;overflow:hidden}
+  .faq-q{width:100%;background:var(--white);border:none;cursor:pointer;padding:1.35rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;font-family:'Jost',sans-serif;font-size:0.95rem;font-weight:500;color:var(--ink);text-align:left;transition:background 0.2s}
+  .faq-q:hover{background:var(--cream)}
+  .faq-q svg{width:16px;height:16px;color:var(--mocha);flex-shrink:0;transition:transform 0.3s}
+  .faq-q.open svg{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease;font-size:0.9rem;color:var(--muted);font-weight:300;line-height:1.8}
+  .faq-a-inner{padding:0 1.5rem 1.5rem}
+  .final-cta{background:var(--cream);padding:7rem 5vw;text-align:center;position:relative;overflow:hidden}
+  .final-cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:750px;height:750px;background:radial-gradient(circle,rgba(158,126,111,0.16) 0%,transparent 65%);pointer-events:none}
+  .final-cta h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.5rem,4.5vw,4.4rem);font-weight:500;color:var(--ink);line-height:1.08;margin-bottom:1.25rem;position:relative;z-index:2}
+  .final-cta h2 em{font-style:italic;color:var(--mocha)}
+  .final-cta p{font-size:1rem;color:var(--mid);font-weight:300;max-width:540px;margin:0 auto 2.5rem;line-height:1.85;position:relative;z-index:2}
+  .final-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:2}
+  .final-note{font-size:0.8rem;color:var(--muted);margin-top:1.5rem;position:relative;z-index:2}
+  footer{background:var(--mocha-deep);padding:3rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+  footer .nav-logo{color:var(--white);font-size:1.15rem}
+  footer .nav-logo span{color:#DCC3B6}
+  footer p{font-size:0.8rem;color:rgba(255,255,255,0.3)}
+  footer a{font-size:0.8rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
+  footer a:hover{color:#DCC3B6}
+  [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease}
+  [data-reveal].revealed{opacity:1;transform:translateY(0)}
+  @media (max-width:1080px){.sp-grid{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:960px){.intro-grid,.donate-inner,.convener{grid-template-columns:1fr;gap:3rem}.intro p{max-width:none}.portrait{width:100%;max-width:340px;height:auto;aspect-ratio:4/5}.days-grid,.tk-cards{grid-template-columns:1fr}.tk-cards.two{grid-template-columns:1fr;max-width:none}.nav-tag{display:none}}
+  @media (max-width:640px){.sp-grid{grid-template-columns:repeat(2,1fr)}.cd-unit{width:66px;padding:0.75rem 0}.cd-num{font-size:1.7rem}.meta-row{gap:1rem}.bank-row{flex-direction:column;gap:0.3rem}.bank-row strong{text-align:left}}
+</style>
+</head>
+<body>
 
+<nav>
+  <a href="https://maryamlemu.com" class="nav-logo">Maryam <span>Lemu</span></a>
+  <span class="nav-tag">The Muslim Family Summit · November 2026</span>
+  <a href="#tickets" class="nav-cta-btn">Register</a>
+</nav>
+
+<section class="hero" data-screen-label="Hero">
+  <div class="hero-inner" data-reveal>
+    <div class="eyebrow"><span class="eyebrow-line"></span><span>The Muslim Family Summit · Abuja · 14–16 November 2026</span></div>
+    <h1>Would you like to build a home<br>of <em>peace, love & fulfillment</em>?</h1>
+    <div class="trailer" data-trailer>
+      <div class="trailer-ph">
+        <span class="tp-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        <span class="tp-text">Summit trailer</span>
+      </div>
+    </div>
+    <p class="hero-sub">Three days of honest conversation on building the Muslim home — marriage, parenting, character and faith — convened by Maryam Lemu and led by teachers from across the world.</p>
+
+    <div class="meta-row">
+      <div class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>14, 15 & 16 November 2026</div>
+      <div class="meta-divider"></div>
+      <div class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-8-4.5-8-11a8 8 0 0116 0c0 6.5-8 11-8 11z"/><circle cx="12" cy="10" r="3"/></svg>Abuja, Nigeria</div>
+      <div class="meta-divider"></div>
+      <div class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>Families, Couples & Teens</div>
+    </div>
+
+    <div class="countdown-wrap">
+      <p class="countdown-label">Prices go up on 24 October — in</p>
+      <div class="countdown" data-countdown="2026-10-24T23:59:59">
+        <div class="cd-unit"><div class="cd-num" data-days>00</div><div class="cd-tag">Days</div></div>
+        <div class="cd-unit"><div class="cd-num" data-hours>00</div><div class="cd-tag">Hours</div></div>
+        <div class="cd-unit"><div class="cd-num" data-mins>00</div><div class="cd-tag">Minutes</div></div>
+        <div class="cd-unit"><div class="cd-num" data-secs>00</div><div class="cd-tag">Seconds</div></div>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#tickets" class="btn-primary">Register Now</a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="m-item"><span class="m-dot"></span>Marriage</span>
+    <span class="m-item"><span class="m-dot"></span>Parenting</span>
+    <span class="m-item"><span class="m-dot"></span>Character</span>
+    <span class="m-item"><span class="m-dot"></span>Communication</span>
+    <span class="m-item"><span class="m-dot"></span>Intimacy</span>
+    <span class="m-item"><span class="m-dot"></span>Faith</span>
+    <span class="m-item"><span class="m-dot"></span>Healing</span>
+    <span class="m-item"><span class="m-dot"></span>Legacy</span>
+    <span class="m-item"><span class="m-dot"></span>Marriage</span>
+    <span class="m-item"><span class="m-dot"></span>Parenting</span>
+    <span class="m-item"><span class="m-dot"></span>Character</span>
+    <span class="m-item"><span class="m-dot"></span>Communication</span>
+    <span class="m-item"><span class="m-dot"></span>Intimacy</span>
+    <span class="m-item"><span class="m-dot"></span>Faith</span>
+    <span class="m-item"><span class="m-dot"></span>Healing</span>
+    <span class="m-item"><span class="m-dot"></span>Legacy</span>
+  </div>
+</div>
+
+<section class="intro" id="about" data-screen-label="About the summit">
+  <div class="intro-grid">
+    <div data-reveal>
+      <div class="section-tag">The Summit</div>
+      <h2>Your family is your <em>greatest investment</em>.<br>Don’t leave its future to chance.</h2>
+      <p>The strongest homes are built with intention. How we love, communicate, handle conflict, raise our children and nurture our faith will shape not only our families, but the generations that come after us.</p>
+      <p>The Muslim Family Summit brings together trusted speakers, counsellors and teachers for three days of honest conversations and practical guidance on marriage, parenting, relationships, faith and family life.</p>
+      <p>Come as a couple. Come alone. Bring your teenager. Come ready to learn, reconnect and take home tools you can begin using immediately.</p>
+      <p><strong>Because some things are too important to figure out as you go.</strong></p>
+    </div>
+    <ul class="pillar-list" data-reveal>
+      <li><span class="tl-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></span>Marriage that survives the hard seasons</li>
+      <li><span class="tl-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></span>Raising children with deen and character</li>
+      <li><span class="tl-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></span>Communication, conflict and repair</li>
+      <li><span class="tl-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></span>Intimacy, honesty and trust</li>
+      <li><span class="tl-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></span>Healing from what you inherited</li>
+      <li><span class="tl-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></span>Guiding teenagers through a loud world</li>
+    </ul>
+  </div>
+</section>
+
+<section class="convener" data-screen-label="Convener">
+  <div class="portrait" data-reveal><img src="assets/speaker-maryam-lemu.jpg" alt="Maryam Lemu"></div>
+  <div data-reveal>
+    <div class="section-tag">The Convener</div>
+    <h2>Maryam Lemu</h2>
+    <p>Maryam Lemu is a relationship expert with over three and a half decades of experience in marriage, public speaking and personal development. She has travelled globally facilitating seminars and retreats on marital and premarital topics, team building and effective communication.</p>
+    <p>Her <strong>35-year marriage</strong> to her husband, Sa'id, has been a journey of self-discovery, spiritual growth and true partnership — the work that inspired the Maryam Lemu Marriage Academy and its certified premarital masterclass.</p>
+  </div>
+</section>
+
+<section class="speakers" id="speakers" data-screen-label="Speakers">
+  <div class="sp-head" data-reveal>
+    <div class="section-tag" style="display:inline-flex;">The Line-Up</div>
+    <h2>Teachers you already <em>learn from</em></h2>
+    <p>Voices from Nigeria, the UK and the United States, in one room for three days.</p>
+  </div>
+  <div class="sp-grid" data-reveal>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-maryam-lemu.jpg" alt="" onerror="this.remove()"><span class="ph">ML</span><div class="sp-bio"><p>Relationship expert and convener of the summit. Over three and a half decades in marriage, counselling and personal development, and creator of the certified premarital masterclass. Expect frank, practical teaching on communication, respect and building a marriage that lasts.</p></div></div><h3>Maryam Lemu</h3><span>Convener</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-said-takuma.jpg" alt="" onerror="this.remove()"><span class="ph">ST</span><div class="sp-bio"><p>Speaker and mentor on faith, character and the responsibilities of the Muslim man at home. Expect a grounded session on leadership, presence and the habits that shape a household.</p></div></div><h3>Sa'id Takuma</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-yasmin-mogahed.png" alt="" class="cutout" style="transform:scale(1.5);transform-origin:center 20%" onerror="this.remove()"><span class="ph">YM</span><div class="sp-bio"><p>Internationally renowned teacher and author of Reclaim Your Heart. She writes and speaks on the heart, attachment and healing. Expect a session on where we place our love, and how faith steadies us when relationships hurt.</p></div></div><h3>Yasmin Mogahed</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-habeeb-akande.jpg?v=2" alt="" style="object-position:center 15%" onerror="this.remove()"><span class="ph">HA</span><div class="sp-bio"><p>British author and researcher on intimacy, marriage and pleasure in the Islamic tradition. Expect a candid, evidence-led session on the conversations couples avoid, and why they matter.</p></div></div><h3>Habeeb Akande</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-naima-b-robert.jpg" alt="" onerror="this.remove()"><span class="ph">NR</span><div class="sp-bio"><p>Author and founding editor of SISTERS magazine, and a long-standing voice on motherhood, identity and raising Muslim children. Expect practical teaching on parenting with intention.</p></div></div><h3>Na'ima B. Robert</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-angelica-lindsey-ali.jpg?v=2" alt="" style="object-position:68% 12%;transform:scale(1.5);transform-origin:68% 12%" onerror="this.remove()"><span class="ph">AL</span><div class="sp-bio"><p>Community health educator known as The Village Auntie, working on intimacy, sexual health and womanhood from an Islamic lens. Expect an honest room for wives and mothers.</p></div></div><h3>Angelica Lindsey-Ali</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-abdullah-oduro.jpg" alt="" style="object-position:52% top;transform:scale(1.25);transform-origin:52% top" onerror="this.remove()"><span class="ph">AO</span><div class="sp-bio"><p>Scholar, imam and marriage counsellor whose work focuses on family, converts and the fiqh of the home. Expect clarity on rights, obligations and conflict resolved the right way.</p></div></div><h3>Abdullah Oduro</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-nurudeen-lemu.webp" alt="" onerror="this.remove()"><span class="ph">NL</span><div class="sp-bio"><p>Educator and researcher on Islamic education, character development and community building. Expect the bigger picture: how strong homes build a strong ummah.</p></div></div><h3>Nurudeen Lemu</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-mustafa-briggs.jpg?v=2" alt="" style="object-position:center 12%;transform:scale(1.55);transform-origin:center 12%" onerror="this.remove()"><span class="ph">MB</span><div class="sp-bio"><p>Lecturer and author of Beyond Bilal, teaching on history, spirituality and identity in Islam. Expect a session that connects who we are to how we raise the next generation.</p></div></div><h3>Sheikh Mustafa Briggs</h3><span>Speaker</span></div>
+    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-edris-khamissa.png" alt="" class="cutout" style="object-position:center top" onerror="this.remove()"><span class="ph">EK</span><div class="sp-bio"><p>Educator, author and family life consultant with decades of work on parenting, schooling and character. Expect warm, practical guidance for parents raising children today.</p></div></div><h3>Edris Khamissa</h3><span>Speaker</span></div>
+  </div>
+  <p class="sp-note" data-reveal>Hover over a speaker to read more.</p>
+</section>
+
+<section class="programme" id="programme" data-screen-label="Programme">
+  <div class="pg-head" data-reveal>
+    <div class="section-tag">What to Expect</div>
+    <h2>Three days. Three experiences. <em>One purpose.</em></h2>
+  </div>
+  <div>
+    <div class="day-block" data-reveal>
+      <div class="day-head">
+        <span class="day-label">Day One · The Main Summit</span>
+        <span class="day-when">14 November 2026</span>
+        <h3>Everyone. Every speaker. One room.</h3>
+      </div>
+      <p class="day-lede">A full-day experience for men, women and couples, bringing our entire international speaker line-up together under one roof.</p>
+      <div class="day-more"><div>
+        <p class="day-lede">Powerful conversations on marriage, family, faith, parenting, intimacy, communication and building homes that thrive.</p>
+        <p class="day-note" style="margin-top:0">This is the day everyone should experience.</p>
+      </div></div>
+      <button class="day-toggle" onclick="toggleDay(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>Read more</span></button>
+    </div>
+    <div class="day-block" data-reveal>
+      <div class="day-head">
+        <span class="day-label">Day Two · Men &amp; Women, Separate Rooms</span>
+        <span class="day-when">15 November 2026 · Morning</span>
+        <h3>Some conversations need their own space.</h3>
+      </div>
+      <p class="day-lede">Separate rooms for men and for women, plus an afternoon session for teenage girls.</p>
+      <div class="day-more"><div>
+      <div class="day-rooms three">
+        <div class="room">
+          <h4>Men only</h4>
+          <p>An honest, no-judgement space to talk manhood, positive masculinity, Qawwamah, marriage, fatherhood, leadership and the private struggles men rarely get to discuss openly.</p>
+        </div>
+        <div class="room">
+          <h4>Women only</h4>
+          <p>A warm, safe space for honest conversations and practical workshops around womanhood, marriage, emotional wellbeing, spirituality, intimacy and the personal issues women need room to speak about freely.</p>
+        </div>
+        <div class="room">
+          <h4>Teenage girls · Afternoon</h4>
+          <p>For girls aged 14–19. A special afternoon with Yasmin Mogahed and our female speakers, created for the next generation of Muslim women.</p>
+          <p>Faith. Identity. Confidence. Spirituality. Womanhood. Relationships. And the pressures young Muslim women face today.</p>
+        </div>
+      </div>
+      <p class="day-note" style="margin-top:1.4rem">A conversation we want our daughters to be part of.</p>
+      </div></div>
+      <button class="day-toggle" onclick="toggleDay(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>Read more</span></button>
+    </div>
+    <div class="day-block" data-reveal>
+      <div class="day-head">
+        <span class="day-label">Day Three · The Private Experience</span>
+        <span class="day-when">16 November 2026</span>
+        <h3>Fewer people. Deeper conversations. Direct access.</h3>
+      </div>
+      <p class="day-lede">This is where the Summit becomes personal. Two exclusive, small-group experiences created for conversations that simply cannot happen in a large room.</p>
+      <div class="day-more"><div>
+      <div class="day-rooms">
+        <div class="room">
+          <h4>Men’s private session &amp; dinner</h4>
+          <p>An intimate workshop with Abdullah Oduro and Habeeb Akande exploring manhood, marriage, intimacy, leadership, responsibility and the realities men often struggle to speak about openly.</p>
+          <p>Go deeper. Ask your questions directly. Sit with the speakers, share a meal and have honest conversations in a private, judgement-free space.</p>
+        </div>
+        <div class="room">
+          <h4>Ladies’ private session &amp; dinner</h4>
+          <p>A warm, relaxed and intimate evening with our female speakers, created especially for women.</p>
+          <p>Go beyond the stage and into real conversation about marriage, womanhood, intimacy, relationships, faith and the issues closest to your heart. Ask your questions directly, hear from the speakers personally, share a beautiful dinner and enjoy the freedom of a safe, women-only space.</p>
+        </div>
+      </div>
+      <p class="day-note" style="margin-top:1.4rem">Small groups. Real conversations. Direct access to the speakers. Very limited seats.</p>
+      </div></div>
+      <button class="day-toggle" onclick="toggleDay(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>Read more</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="tickets" id="tickets" data-screen-label="Tickets">
+  <div class="tk-head" data-reveal>
+    <div class="section-tag" style="display:inline-flex;">Registration</div>
+    <h2>Choose your <em>days</em></h2>
+    <p>Each day is registered for separately. Prices shown are starting prices — exact tiers and room prices are shown at checkout. <strong>Prices go up on 24 October.</strong></p>
+    <div class="countdown-wrap" style="margin:2.5rem 0 0">
+      <p class="countdown-label">Early bird ends in</p>
+      <div class="countdown" data-countdown="2026-10-24T23:59:59">
+        <div class="cd-unit"><div class="cd-num" data-days>00</div><div class="cd-tag">Days</div></div>
+        <div class="cd-unit"><div class="cd-num" data-hours>00</div><div class="cd-tag">Hours</div></div>
+        <div class="cd-unit"><div class="cd-num" data-mins>00</div><div class="cd-tag">Minutes</div></div>
+        <div class="cd-unit"><div class="cd-num" data-secs>00</div><div class="cd-tag">Seconds</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tk-cards day-cards" data-reveal>
+    <div class="tk-card">
+      <span class="tk-day">Day One</span>
+      <h4>General</h4>
+      <p class="tk-sub">14 November · Open to everyone</p>
+      <p class="tk-from">Early bird from <strong>₦7,000</strong></p>
+      <span class="tk-reg">Regular ₦9,000</span>
+      <ul class="tk-feat">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Men, women and couples together</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Keynotes from the full line-up</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Basic, VIP and Premium tiers available</li>
+      </ul>
+      <a href="https://maryamlemu.selar.com/day1summit" target="_blank" rel="noopener" class="btn-primary">Register for Day One</a>
+    </div>
+    <div class="tk-card featured">
+      <span class="tk-day">Day Two</span>
+      <h4>Separate Rooms</h4>
+      <p class="tk-sub">15 November · Men, women, teenage girls</p>
+      <p class="tk-from">Early bird from <strong>₦29,000</strong></p>
+      <span class="tk-reg">Regular ₦39,000</span>
+      <ul class="tk-feat">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Men-only and women-only sessions</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Afternoon session for girls aged 14–19</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Choose your room at checkout</li>
+      </ul>
+      <a href="https://maryamlemu.selar.com/day2summit" target="_blank" rel="noopener" class="btn-mocha">Register for Day Two</a>
+    </div>
+    <div class="tk-card">
+      <span class="tk-day">Day Three</span>
+      <h4>Intensives</h4>
+      <p class="tk-sub">16 November · Women only & men only</p>
+      <p class="tk-from">Early bird from <strong>₦99,000</strong></p>
+      <span class="tk-reg">Regular ₦119,000</span>
+      <ul class="tk-feat">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Separate women-only and men-only rooms</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>More intensive, close-access work with the speakers</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Very limited seating</li>
+      </ul>
+      <a href="https://maryamlemu.selar.com/day3summit" target="_blank" rel="noopener" class="btn-primary">Register for Day Three</a>
+    </div>
+  </div>
+
+  <p class="tk-note" data-reveal>The exact venue in Abuja is shared with registered attendees after payment.</p>
+</section>
+
+<section class="donate" id="donate" data-screen-label="Donate">
+  <div class="donate-inner">
+    <div data-reveal>
+      <div class="section-tag">Support the Summit</div>
+      <h2>Would you like to help<br>another family <em>come home to peace</em>?</h2>
+      <p>The whole purpose of this summit is to build the Muslim home. Every seat sponsored is a marriage given tools, a parent given help, a teenage girl told the truth before the world tells her something else.</p>
+      <p>If you cannot attend but you believe in the work, you can give. Donations go towards sponsoring attendees who cannot afford a seat, and towards the running of the summit itself.</p>
+      <p><strong>Any amount helps.</strong> Give once, or give a seat.</p>
+    </div>
+    <div data-reveal>
+      <div class="bank-card">
+        <h3>Nigerian bank transfer</h3>
+        <div class="bank-row"><span>Bank</span><strong>Taj Bank Limited</strong></div>
+        <div class="bank-row"><span>Account number</span><strong class="acct">0007974699</strong></div>
+        <div class="bank-row"><span>Account name</span><strong>The Maryam Lemu Marriage Academy Limited</strong></div>
+      </div>
+      <div class="donate-actions">
+        <a href="https://buy.stripe.com/00weVd6eE8WI5f824Q63K17" target="_blank" rel="noopener" class="btn-mocha">Donate from abroad</a>
+        <a href="#tickets" class="btn-outline">Sponsor a seat</a>
+        <p class="abroad-note">Donating from outside Nigeria? Use the button above to give any amount in your local currency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" data-screen-label="FAQ">
+  <div class="faq-head" data-reveal>
+    <div class="section-tag">Common Questions</div>
+    <h2>Everything you <em>need to know</em></h2>
+  </div>
+  <div class="faq-list" data-reveal>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Where exactly is the summit held?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="faq-a"><div class="faq-a-inner">The summit takes place in Abuja. The exact location is shared with registered attendees after payment.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can I attend only one day?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Each day is registered for separately, so you can attend one, two or all three days.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Is Day One open to both men and women?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Day One is general admission, open to men, women and couples. Day Two is split into men-only and women-only rooms, with a separate afternoon session for teenage girls.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What age is the teenage girls session for?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="faq-a"><div class="faq-a-inner">Girls aged 14 to 19. It runs on the afternoon of Day Two, 15 November.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">When do prices go up?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="faq-a"><div class="faq-a-inner">Prices go up on 24 October 2026. Register before then to secure the early bird rate.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can I get a refund?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="faq-a"><div class="faq-a-inner">No. All tickets are non-refundable. Please be sure of your dates before registering.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can I donate instead of attending?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes. You can give by Nigerian bank transfer to the account listed above, or use the donate button if you are giving from abroad. Donations help sponsor attendees who cannot afford a seat.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" data-screen-label="Final CTA">
+  <h2>Three days.<br>One <em>home</em> to build.</h2>
+  <p>Abuja, 14–16 November 2026. Come and do the work with us.</p>
+  <div class="final-actions">
+    <a href="#tickets" class="btn-primary">Register Now</a>
+    <a href="#donate" class="btn-outline">Donate Instead</a>
+  </div>
+  <p class="final-note">Enquiries: hello@maryamlemu.com</p>
+</section>
+
+<footer>
+  <a href="https://maryamlemu.com" class="nav-logo">Maryam <span>Lemu</span></a>
+  <p>© 2026 The Maryam Lemu Marriage Academy. All rights reserved.</p>
+  <a href="https://maryamlemu.com">maryamlemu.com</a>
+</footer>
+
+<script>
+  function toggleDay(btn){
+    const b=btn.closest('.day-block'),open=b.classList.toggle('open');
+    btn.querySelector('span').textContent=open?'Read less':'Read more';
+  }
+  function toggleFaq(btn){
+    const a=btn.nextElementSibling,open=btn.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(b=>{b.classList.remove('open');b.nextElementSibling.style.maxHeight='0'});
+    if(!open){btn.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+  }
+  function tick(){
+    document.querySelectorAll('[data-countdown]').forEach(el=>{
+      const target=new Date(el.getAttribute('data-countdown')).getTime();
+      let diff=Math.max(0,target-Date.now());
+      const d=Math.floor(diff/86400000);diff-=d*86400000;
+      const h=Math.floor(diff/3600000);diff-=h*3600000;
+      const m=Math.floor(diff/60000);diff-=m*60000;
+      const s=Math.floor(diff/1000);
+      const pad=n=>String(n).padStart(2,'0');
+      const set=(sel,v)=>{const n=el.querySelector(sel);if(n)n.textContent=v};
+      set('[data-days]',pad(d));set('[data-hours]',pad(h));set('[data-mins]',pad(m));set('[data-secs]',pad(s));
+    });
+  }
+  tick();setInterval(tick,1000);
+  document.querySelectorAll('.sp-card').forEach(c=>c.addEventListener('click',()=>{const was=c.classList.contains('open');document.querySelectorAll('.sp-card').forEach(o=>o.classList.remove('open'));if(!was)c.classList.add('open')}));
+  const revealEls=document.querySelectorAll('[data-reveal]');
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>{es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('revealed'),i*70);io.unobserve(e.target)}})},{threshold:0.1});
+    revealEls.forEach(el=>io.observe(el));
+  }
+  const inView=()=>revealEls.forEach(el=>{if(!el.classList.contains('revealed')&&el.getBoundingClientRect().top<window.innerHeight*0.92)el.classList.add('revealed')});
+  inView();window.addEventListener('scroll',inView,{passive:true});window.addEventListener('load',inView);
+  setTimeout(()=>revealEls.forEach(el=>el.classList.add('revealed')),900);
+</script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#9E7E6F"/><path d="M60 100l40-32 40 32v40a4 4 0 01-4 4h-24v-28h-24v28H64a4 4 0 01-4-4z" fill="#FBF7F3"/></svg></template>
+</body>
+</html>
