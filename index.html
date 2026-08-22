@@ -93,18 +93,12 @@
   .sp-img{aspect-ratio:3/4;border:1px solid var(--border);border-radius:3px;background:var(--mocha-pale);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:1rem;transition:border-color 0.25s}
   .sp-card:hover .sp-img{border-color:var(--mocha)}
   .sp-img img{width:100%;height:100%;object-fit:cover;display:block}
-  .sp-img{position:relative;cursor:pointer}
+  .sp-img{position:relative}
   .sp-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:1}
   .sp-img img.cutout{object-fit:cover;object-position:center 33%;background:var(--mocha-pale)}
-  .sp-bio{z-index:2}
-  .sp-bio{position:absolute;inset:0;background:var(--mocha-deep);color:rgba(255,255,255,0.88);display:flex;align-items:flex-start;padding:1.4rem;opacity:0;transition:opacity 0.3s ease;text-align:left;overflow-y:auto;-webkit-overflow-scrolling:touch}
-  .sp-bio p{font-size:0.8rem;line-height:1.65;font-weight:300}
-  .sp-card:hover .sp-bio,.sp-card:focus .sp-bio,.sp-card:focus-within .sp-bio,.sp-card.open .sp-bio{opacity:1}
-  .sp-card{outline:none}
   .sp-img .ph{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;color:var(--mocha);letter-spacing:0.06em}
   .sp-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;font-weight:600;color:var(--ink);line-height:1.2}
   .sp-card span{display:block;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--mocha-dark);margin-top:0.4rem}
-  .sp-note{text-align:center;margin-top:3rem;font-size:0.85rem;color:var(--muted);font-weight:300;letter-spacing:0.04em}
   .programme{padding:7rem 5vw;background:var(--cream)}
   .pg-head{margin-bottom:3.5rem}
   .pg-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,3vw,3rem);font-weight:500;color:var(--ink);margin-top:0.75rem}
@@ -326,18 +320,17 @@
     <p>Voices from Nigeria, the UK and the United States, in one room for three days.</p>
   </div>
   <div class="sp-grid" data-reveal>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-maryam-lemu.jpg" alt="" onerror="this.remove()"><span class="ph">ML</span><div class="sp-bio"><p>Relationship expert and convener of the summit. Over three and a half decades in marriage, counselling and personal development, and creator of the certified premarital masterclass. Expect frank, practical teaching on communication, respect and building a marriage that lasts.</p></div></div><h3>Maryam Lemu</h3><span>Convener</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-said-takuma.jpg" alt="" onerror="this.remove()"><span class="ph">ST</span><div class="sp-bio"><p>Speaker and mentor on faith, character and the responsibilities of the Muslim man at home. Expect a grounded session on leadership, presence and the habits that shape a household.</p></div></div><h3>Sa'id Takuma</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-yasmin-mogahed.png" alt="" class="cutout" style="transform:scale(1.5);transform-origin:center 20%" onerror="this.remove()"><span class="ph">YM</span><div class="sp-bio"><p>Internationally renowned teacher and author of Reclaim Your Heart. She writes and speaks on the heart, attachment and healing. Expect a session on where we place our love, and how faith steadies us when relationships hurt.</p></div></div><h3>Yasmin Mogahed</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-abdullah-oduro.jpg" alt="" style="object-position:52% top;transform:scale(1.25);transform-origin:52% top" onerror="this.remove()"><span class="ph">AO</span><div class="sp-bio"><p>Scholar, imam and marriage counsellor whose work focuses on family, converts and the fiqh of the home. Expect clarity on rights, obligations and conflict resolved the right way.</p></div></div><h3>Abdullah Oduro</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-naima-b-robert.jpg" alt="" onerror="this.remove()"><span class="ph">NR</span><div class="sp-bio"><p>Author and founding editor of SISTERS magazine, and a long-standing voice on motherhood, identity and raising Muslim children. Expect practical teaching on parenting with intention.</p></div></div><h3>Na'ima B. Robert</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-angelica-lindsey-ali.jpg?v=2" alt="" style="object-position:68% 12%;transform:scale(1.5);transform-origin:68% 12%" onerror="this.remove()"><span class="ph">AL</span><div class="sp-bio"><p>Community health educator known as The Village Auntie, working on intimacy, sexual health and womanhood from an Islamic lens. Expect an honest room for wives and mothers.</p></div></div><h3>Angelica Lindsey-Ali</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-habeeb-akande.jpg?v=2" alt="" style="object-position:center 15%" onerror="this.remove()"><span class="ph">HA</span><div class="sp-bio"><p>British author and researcher on intimacy, marriage and pleasure in the Islamic tradition. Expect a candid, evidence-led session on the conversations couples avoid, and why they matter.</p></div></div><h3>Habeeb Akande</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-nurudeen-lemu.webp" alt="" style="transform:scale(1.35);transform-origin:center 22%" onerror="this.remove()"><span class="ph">NL</span><div class="sp-bio"><p>Educator and researcher on Islamic education, character development and community building. Expect the bigger picture: how strong homes build a strong ummah.</p></div></div><h3>Nurudeen Lemu</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-mustafa-briggs.jpg?v=2" alt="" style="object-position:center 12%;transform:scale(1.55);transform-origin:center 12%" onerror="this.remove()"><span class="ph">MB</span><div class="sp-bio"><p>Lecturer and author of Beyond Bilal, teaching on history, spirituality and identity in Islam. Expect a session that connects who we are to how we raise the next generation.</p></div></div><h3>Sheikh Mustafa Briggs</h3><span>Speaker</span></div>
-    <div class="sp-card" tabindex="0"><div class="sp-img"><img src="assets/speaker-edris-khamissa.png" alt="" class="cutout" style="object-position:center top" onerror="this.remove()"><span class="ph">EK</span><div class="sp-bio"><p>Educator, author and family life consultant with decades of work on parenting, schooling and character. Expect warm, practical guidance for parents raising children today.</p></div></div><h3>Edris Khamissa</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-maryam-lemu.jpg" alt="" onerror="this.remove()"><span class="ph">ML</span></div><h3>Maryam Lemu</h3><span>Convener</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-said-takuma.jpg" alt="" onerror="this.remove()"><span class="ph">ST</span></div><h3>Sa'id Takuma</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-yasmin-mogahed.png" alt="" class="cutout" style="transform:scale(1.5);transform-origin:center 20%" onerror="this.remove()"><span class="ph">YM</span></div><h3>Yasmin Mogahed</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-abdullah-oduro.jpg" alt="" style="object-position:52% top;transform:scale(1.25);transform-origin:52% top" onerror="this.remove()"><span class="ph">AO</span></div><h3>Abdullah Oduro</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-naima-b-robert.jpg" alt="" onerror="this.remove()"><span class="ph">NR</span></div><h3>Na'ima B. Robert</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-angelica-lindsey-ali.jpg?v=2" alt="" style="object-position:68% 12%;transform:scale(1.5);transform-origin:68% 12%" onerror="this.remove()"><span class="ph">AL</span></div><h3>Angelica Lindsey-Ali</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-habeeb-akande.jpg?v=2" alt="" style="object-position:center 15%" onerror="this.remove()"><span class="ph">HA</span></div><h3>Habeeb Akande</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-nurudeen-lemu.webp" alt="" style="transform:scale(1.35);transform-origin:center 22%" onerror="this.remove()"><span class="ph">NL</span></div><h3>Nurudeen Lemu</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-mustafa-briggs.jpg?v=2" alt="" style="object-position:center 12%;transform:scale(1.55);transform-origin:center 12%" onerror="this.remove()"><span class="ph">MB</span></div><h3>Sheikh Mustafa Briggs</h3><span>Speaker</span></div>
+    <div class="sp-card"><div class="sp-img"><img src="assets/speaker-edris-khamissa.png" alt="" class="cutout" style="object-position:center top" onerror="this.remove()"><span class="ph">EK</span></div><h3>Edris Khamissa</h3><span>Speaker</span></div>
   </div>
-  <p class="sp-note" data-reveal>Hover over a speaker to read more.</p>
 </section>
 
 <section class="programme" id="programme" data-screen-label="Programme">
@@ -577,7 +570,6 @@
     });
   }
   tick();setInterval(tick,1000);
-  document.querySelectorAll('.sp-card').forEach(c=>c.addEventListener('click',()=>{const was=c.classList.contains('open');document.querySelectorAll('.sp-card').forEach(o=>o.classList.remove('open'));if(!was)c.classList.add('open')}));
   const revealEls=document.querySelectorAll('[data-reveal]');
   if('IntersectionObserver' in window){
     const io=new IntersectionObserver(es=>{es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('revealed'),i*70);io.unobserve(e.target)}})},{threshold:0.1});
