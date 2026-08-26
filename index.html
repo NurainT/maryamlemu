@@ -59,6 +59,9 @@
   .countdown.dark .cd-unit{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.14)}
   .countdown.dark .cd-num{color:var(--white)}
   .countdown.dark .cd-tag{color:rgba(255,255,255,0.5)}
+  .countdown.mocha .cd-unit{background:var(--mocha-deep);border-color:var(--mocha-deep)}
+  .countdown.mocha .cd-num{color:var(--white)}
+  .countdown.mocha .cd-tag{color:rgba(255,255,255,0.65)}
   .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
   .marquee-strip{background:var(--mocha-deep);padding:0.85rem 0;overflow:hidden}
   .marquee-track{display:flex;gap:2.5rem;animation:scroll 26s linear infinite;width:max-content}
@@ -408,7 +411,7 @@
     <p>Each day is registered for separately. Prices shown are starting prices — exact tiers and room prices are shown at checkout. <strong>Prices go up on 24 October.</strong></p>
     <div class="countdown-wrap" style="margin:2.5rem 0 0">
       <p class="countdown-label">Early bird ends in</p>
-      <div class="countdown" data-countdown="2026-10-24T23:59:59">
+      <div class="countdown mocha" data-countdown="2026-10-24T23:59:59">
         <div class="cd-unit"><div class="cd-num" data-days>00</div><div class="cd-tag">Days</div></div>
         <div class="cd-unit"><div class="cd-num" data-hours>00</div><div class="cd-tag">Hours</div></div>
         <div class="cd-unit"><div class="cd-num" data-mins>00</div><div class="cd-tag">Minutes</div></div>
