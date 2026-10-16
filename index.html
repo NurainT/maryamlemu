@@ -62,7 +62,7 @@
   .countdown.mocha .cd-unit{background:var(--mocha);border-color:var(--mocha)}
   .countdown.mocha .cd-num{color:var(--white)}
   .countdown.mocha .cd-tag{color:rgba(255,255,255,0.65)}
-  .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+  .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:2.5rem}
   .marquee-strip{background:var(--mocha-deep);padding:0.85rem 0;overflow:hidden}
   .marquee-track{display:flex;gap:2.5rem;animation:scroll 26s linear infinite;width:max-content}
   .m-item{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);white-space:nowrap;display:flex;align-items:center;gap:1.25rem}
@@ -250,6 +250,10 @@
       <div class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>Families, Couples & Teens</div>
     </div>
 
+    <div class="hero-actions">
+      <a href="#tickets" class="btn-primary">Register Now</a>
+    </div>
+
     <div class="countdown-wrap">
       <p class="countdown-label">Prices go up on 24 October — in</p>
       <div class="countdown" data-countdown="2026-10-24T23:59:59">
@@ -258,10 +262,6 @@
         <div class="cd-unit"><div class="cd-num" data-mins>00</div><div class="cd-tag">Minutes</div></div>
         <div class="cd-unit"><div class="cd-num" data-secs>00</div><div class="cd-tag">Seconds</div></div>
       </div>
-    </div>
-
-    <div class="hero-actions">
-      <a href="#tickets" class="btn-primary">Register Now</a>
     </div>
   </div>
 </section>
