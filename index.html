@@ -145,12 +145,7 @@
   .tk-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,3.5vw,3.5rem);font-weight:500;color:var(--ink)}
   .tk-head h2 em{font-style:italic;color:var(--mocha)}
   .tk-head p{font-size:0.95rem;color:var(--muted);font-weight:300;margin-top:0.85rem}
-  .pkg-card{max-width:1100px;margin:0 auto;background:var(--mocha-pale);border:1px solid var(--mocha-border);border-radius:6px;overflow:hidden}
-  .pkg-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:1.4rem 2rem;border-bottom:1px solid var(--mocha-border)}
-  .pkg-top-label{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--mocha-dark);font-weight:700}
-  .pkg-cd{display:flex;gap:1.5rem}
-  .pkg-cd span span{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;color:var(--ink)}
-  .pkg-cd small{font-size:0.72rem;color:var(--mid);font-weight:400;margin-left:0.2rem}
+  .pkg-card{max-width:1100px;margin:2.5rem auto 0;background:var(--mocha-pale);border:1px solid var(--mocha-border);border-radius:6px;overflow:hidden}
   .pkg-row{display:flex;align-items:center;gap:1.5rem;padding:1.5rem 2rem;border-bottom:1px solid var(--mocha-border);flex-wrap:wrap}
   .pkg-row:last-of-type{border-bottom:none}
   .pkg-day{width:100px;flex-shrink:0}
@@ -417,19 +412,18 @@
     <div class="section-tag" style="display:inline-flex;">Registration</div>
     <h2>Choose your <em>days</em></h2>
     <p>Each day is registered for separately — choose one, two or all three.</p>
+    <div class="countdown-wrap" style="margin:2.5rem 0 0">
+      <p class="countdown-label">Early bird prices end 24 October — in</p>
+      <div class="countdown mocha" data-countdown="2026-10-24T23:59:59">
+        <div class="cd-unit"><div class="cd-num" data-days>00</div><div class="cd-tag">Days</div></div>
+        <div class="cd-unit"><div class="cd-num" data-hours>00</div><div class="cd-tag">Hours</div></div>
+        <div class="cd-unit"><div class="cd-num" data-mins>00</div><div class="cd-tag">Minutes</div></div>
+        <div class="cd-unit"><div class="cd-num" data-secs>00</div><div class="cd-tag">Seconds</div></div>
+      </div>
+    </div>
   </div>
 
   <div class="pkg-card" data-reveal>
-    <div class="pkg-top">
-      <span class="pkg-top-label">Early bird prices end 24 October</span>
-      <div class="pkg-cd" data-countdown="2026-10-24T23:59:59">
-        <span><span data-days>00</span><small>days</small></span>
-        <span><span data-hours>00</span><small>hrs</small></span>
-        <span><span data-mins>00</span><small>min</small></span>
-        <span><span data-secs>00</span><small>sec</small></span>
-      </div>
-    </div>
-
     <div class="pkg-row">
       <div class="pkg-day"><b>Day One</b><span>Sat 14 Nov</span></div>
       <div class="pkg-info">
