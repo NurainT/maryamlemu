@@ -145,33 +145,32 @@
   .tk-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,3.5vw,3.5rem);font-weight:500;color:var(--ink)}
   .tk-head h2 em{font-style:italic;color:var(--mocha)}
   .tk-head p{font-size:0.95rem;color:var(--muted);font-weight:300;margin-top:0.85rem}
-  .tk-block{max-width:1200px;margin:0 auto 3.5rem}
-  .tk-block-title{display:flex;align-items:baseline;gap:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem}
-  .tk-block-title h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;font-weight:600;color:var(--ink)}
-  .tk-block-title span{font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
-  .tk-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-  .tk-cards.two{grid-template-columns:repeat(2,1fr);max-width:780px}
-  .tk-cards.day-cards{max-width:1200px;margin:0 auto}
-  .tk-from{font-size:0.9rem;color:var(--mid);font-weight:300;margin:-0.9rem 0 1.4rem}
-  .tk-from strong{font-family:'Jost',system-ui,sans-serif;font-size:0.98rem;font-weight:500;color:var(--ink);margin-left:0.15rem}
-  .tk-from{margin-bottom:0.35rem}
-  .tk-day{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mocha-dark);display:block;margin-bottom:0.5rem}
-  .day-cards .tk-feat{margin-bottom:2rem}
-  .tk-card{border:1px solid var(--border);border-radius:4px;padding:2rem;display:flex;flex-direction:column;background:var(--white);position:relative;transition:border-color 0.2s,transform 0.2s}
-  .tk-card:hover{border-color:var(--mocha-border);transform:translateY(-2px)}
-  .tk-card.featured{border:2px solid var(--mocha);background:var(--mocha-pale)}
-  .tk-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--mocha);color:var(--white);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;padding:0.35rem 1rem;border-radius:2px;white-space:nowrap}
-  .tk-card h4{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;font-weight:600;color:var(--ink);margin-bottom:0.2rem}
-  .tk-sub{font-size:0.78rem;color:var(--muted);margin-bottom:1.4rem;letter-spacing:0.03em}
-  .tk-price{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.6rem;font-weight:600;color:var(--ink);line-height:1}
-  .tk-price sup{font-size:1.1rem;vertical-align:super}
-  .tk-reg{display:block;font-size:0.98rem;color:var(--mid);font-weight:500;margin:0.5rem 0 1.5rem}
-  .tk-reg s{color:var(--mocha-dark)}
-  .tk-feat{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.75rem}
-  .tk-feat li{display:flex;align-items:flex-start;gap:0.6rem;font-size:0.84rem;color:var(--mid);line-height:1.5;font-weight:300}
-  .tk-feat svg{width:15px;height:15px;flex-shrink:0;color:var(--mocha);margin-top:2px}
-  .tk-card .btn-primary,.tk-card .btn-mocha{width:100%;text-align:center;margin-top:auto}
-  .tk-note{text-align:center;font-size:0.85rem;color:var(--muted);font-weight:300;line-height:1.8;max-width:600px;margin:0 auto}
+  .pkg-card{max-width:1100px;margin:0 auto;background:var(--mocha-pale);border:1px solid var(--mocha-border);border-radius:6px;overflow:hidden}
+  .pkg-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:1.4rem 2rem;border-bottom:1px solid var(--mocha-border)}
+  .pkg-top-label{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--mocha-dark);font-weight:700}
+  .pkg-cd{display:flex;gap:1.5rem}
+  .pkg-cd span span{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;color:var(--ink)}
+  .pkg-cd small{font-size:0.72rem;color:var(--mid);font-weight:400;margin-left:0.2rem}
+  .pkg-row{display:flex;align-items:center;gap:1.5rem;padding:1.5rem 2rem;border-bottom:1px solid var(--mocha-border);flex-wrap:wrap}
+  .pkg-row:last-of-type{border-bottom:none}
+  .pkg-day{width:100px;flex-shrink:0}
+  .pkg-day b{display:block;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--mocha-dark);font-weight:700;margin-bottom:0.25rem}
+  .pkg-day span{font-size:0.82rem;color:var(--muted)}
+  .pkg-info{flex:1;min-width:200px}
+  .pkg-info h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.45rem;font-weight:600;color:var(--ink);margin-bottom:0.25rem}
+  .pkg-info p{font-size:0.86rem;color:var(--mid);font-weight:300;line-height:1.6}
+  .pkg-pricebtn{display:flex;align-items:center;gap:1.25rem;flex-shrink:0}
+  .pkg-price{text-align:right;min-width:95px}
+  .pkg-price .now{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;color:var(--ink)}
+  .pkg-price .was{font-size:0.78rem;color:var(--muted);text-decoration:line-through}
+  .pkg-price .soon{font-size:0.82rem;color:var(--muted)}
+  .pkg-btn a{background:var(--cta);color:var(--ink);padding:0.65rem 1.4rem;border-radius:4px;font-size:0.74rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;display:inline-block;transition:background 0.2s;white-space:nowrap}
+  .pkg-btn a:hover{background:var(--cta-dark)}
+  .pkg-steps{display:flex;gap:2rem;padding:1.6rem 2rem;flex-wrap:wrap}
+  .pkg-step{display:flex;gap:0.7rem;flex:1;min-width:190px}
+  .pkg-step b{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;color:var(--mocha-dark);font-weight:600;flex-shrink:0}
+  .pkg-step p{font-size:0.82rem;color:var(--mid);font-weight:300;line-height:1.6}
+  @media(max-width:760px){.pkg-row{flex-direction:column;align-items:flex-start;gap:0.5rem}.pkg-day{width:auto}.pkg-pricebtn{width:100%;justify-content:space-between;margin-top:0.3rem}.pkg-price{text-align:left}}
   .donate{background:var(--mocha-deep);padding:7rem 5vw;position:relative;overflow:hidden}
   .donate::before{content:'';position:absolute;top:-200px;right:-180px;width:620px;height:620px;background:radial-gradient(circle,rgba(158,126,111,0.35) 0%,transparent 70%);pointer-events:none}
   .donate-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:flex-start;position:relative;z-index:2;max-width:1250px;margin:0 auto}
@@ -417,64 +416,74 @@
   <div class="tk-head" data-reveal>
     <div class="section-tag" style="display:inline-flex;">Registration</div>
     <h2>Choose your <em>days</em></h2>
-    <p>Each day is registered for separately. Prices shown are starting prices — exact tiers and room prices are shown at checkout. <strong>Prices go up on 24 October.</strong></p>
-    <div class="countdown-wrap" style="margin:2.5rem 0 0">
-      <p class="countdown-label">Early bird ends in</p>
-      <div class="countdown mocha" data-countdown="2026-10-24T23:59:59">
-        <div class="cd-unit"><div class="cd-num" data-days>00</div><div class="cd-tag">Days</div></div>
-        <div class="cd-unit"><div class="cd-num" data-hours>00</div><div class="cd-tag">Hours</div></div>
-        <div class="cd-unit"><div class="cd-num" data-mins>00</div><div class="cd-tag">Minutes</div></div>
-        <div class="cd-unit"><div class="cd-num" data-secs>00</div><div class="cd-tag">Seconds</div></div>
-      </div>
-    </div>
+    <p>Each day is registered for separately — choose one, two or all three.</p>
   </div>
 
-  <div class="tk-cards day-cards" data-reveal>
-    <div class="tk-card">
-      <span class="tk-day">Day One</span>
-      <h4>Main Event</h4>
-      <p class="tk-sub">14 November · Open to everyone</p>
-      <p class="tk-from">Early bird from <strong>₦7,000</strong></p>
-      <span class="tk-reg">Regular ₦9,000</span>
-      <ul class="tk-feat">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Men, women and couples together</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Keynotes from the full line-up</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Basic, VIP and Premium tiers available</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Virtual attendance option available</li>
-      </ul>
-      <a href="https://maryamlemu.selar.com/day1summit" target="_blank" rel="noopener" class="btn-primary">Register for Day One</a>
-    </div>
-    <div class="tk-card featured">
-      <span class="tk-day">Day Two</span>
-      <h4>Men's Only &amp; Women's Only Sessions</h4>
-      <p class="tk-sub">15 November · Men, women, teenage girls</p>
-      <p class="tk-from">Early bird from <strong>₦29,000</strong></p>
-      <span class="tk-reg">Regular ₦39,000</span>
-      <ul class="tk-feat">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Men-only and women-only sessions</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Afternoon session for girls aged 14–19</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Choose your room at checkout</li>
-      </ul>
-      <a href="https://maryamlemu.selar.com/day2summit" target="_blank" rel="noopener" class="btn-mocha">Register for Day Two</a>
-    </div>
-    <div class="tk-card">
-      <span class="tk-day">Day Three</span>
-      <h4>Exclusive Intimate Sessions</h4>
-      <p class="tk-sub">16 November · Women only & men only</p>
-      <p class="tk-from">Price coming soon</p>
-      <ul class="tk-feat">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Separate women-only and men-only rooms</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>More intensive, close-access work with the speakers</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Very limited seating</li>
-      </ul>
-      <div style="display:flex;flex-direction:column;gap:0.6rem;margin-top:auto">
-        <a href="https://maryamlemu.selar.com/d3women" target="_blank" rel="noopener" class="btn-primary" style="width:100%;text-align:center">Register — Women</a>
-        <a href="https://maryamlemu.selar.com/d3men" target="_blank" rel="noopener" class="btn-mocha" style="width:100%;text-align:center">Register — Men</a>
+  <div class="pkg-card" data-reveal>
+    <div class="pkg-top">
+      <span class="pkg-top-label">Early bird prices end 24 October</span>
+      <div class="pkg-cd" data-countdown="2026-10-24T23:59:59">
+        <span><span data-days>00</span><small>days</small></span>
+        <span><span data-hours>00</span><small>hrs</small></span>
+        <span><span data-mins>00</span><small>min</small></span>
+        <span><span data-secs>00</span><small>sec</small></span>
       </div>
     </div>
-  </div>
 
-  <p class="tk-note" data-reveal>The exact venue in Abuja is shared with registered attendees after payment.</p>
+    <div class="pkg-row">
+      <div class="pkg-day"><b>Day One</b><span>Sat 14 Nov</span></div>
+      <div class="pkg-info">
+        <h3>Main Summit</h3>
+        <p>Men, women and couples. Basic, VIP and Premium tiers; virtual attendance available.</p>
+      </div>
+      <div class="pkg-pricebtn">
+        <div class="pkg-price"><span class="now">₦7,000</span><span class="was">₦9,000</span></div>
+        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/day1summit" target="_blank" rel="noopener">Register</a></div>
+      </div>
+    </div>
+
+    <div class="pkg-row">
+      <div class="pkg-day"><b>Day Two</b><span>Sun 15 Nov</span></div>
+      <div class="pkg-info">
+        <h3>Men's &amp; Women's Sessions</h3>
+        <p>Choose your room at checkout. Afternoon session for girls aged 14 to 19.</p>
+      </div>
+      <div class="pkg-pricebtn">
+        <div class="pkg-price"><span class="now">₦29,000</span><span class="was">₦39,000</span></div>
+        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/day2summit" target="_blank" rel="noopener">Register</a></div>
+      </div>
+    </div>
+
+    <div class="pkg-row">
+      <div class="pkg-day"><b>Day Three</b><span>Mon 16 Nov</span></div>
+      <div class="pkg-info">
+        <h3>Ladies' Private Session &amp; Dinner</h3>
+        <p>Small group with our female speakers. Very limited seating.</p>
+      </div>
+      <div class="pkg-pricebtn">
+        <div class="pkg-price"><span class="soon">Price to follow</span></div>
+        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/d3women" target="_blank" rel="noopener">Register</a></div>
+      </div>
+    </div>
+
+    <div class="pkg-row">
+      <div class="pkg-day"><b>Day Three</b><span>Mon 16 Nov</span></div>
+      <div class="pkg-info">
+        <h3>Men's Private Session &amp; Dinner</h3>
+        <p>With Abdullah Oduro and Habeeb Akande. Very limited seating.</p>
+      </div>
+      <div class="pkg-pricebtn">
+        <div class="pkg-price"><span class="soon">Price to follow</span></div>
+        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/d3men" target="_blank" rel="noopener">Register</a></div>
+      </div>
+    </div>
+
+    <div class="pkg-steps">
+      <div class="pkg-step"><b>1</b><p>Register for each day on Selar and pay by card or transfer.</p></div>
+      <div class="pkg-step"><b>2</b><p>Your ticket and receipt arrive by email straight away.</p></div>
+      <div class="pkg-step"><b>3</b><p>The Abuja venue is shared with registered attendees after payment.</p></div>
+    </div>
+  </div>
 </section>
 
 <section class="donate" id="donate" data-screen-label="Donate">
