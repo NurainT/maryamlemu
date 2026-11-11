@@ -162,6 +162,8 @@
   .pkg-price .soon{font-size:0.82rem;color:var(--muted)}
   .pkg-btn a{background:var(--cta);color:var(--ink);padding:0.65rem 1.4rem;border-radius:4px;font-size:0.74rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;display:inline-block;transition:background 0.2s;white-space:nowrap}
   .pkg-btn a:hover{background:var(--cta-dark)}
+  .reg-btn.is-closed{pointer-events:none;cursor:not-allowed}
+  .reg-btn.is-closed:hover{background:var(--cta)}
   .pkg-steps{display:flex;gap:2rem;padding:1.6rem 2rem;flex-wrap:wrap}
   .pkg-step{display:flex;gap:0.7rem;flex:1;min-width:190px}
   .pkg-step b{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;color:var(--mocha-dark);font-weight:600;flex-shrink:0}
@@ -226,7 +228,7 @@
 <nav>
   <a href="https://maryamlemu.com" class="nav-logo">Maryam <span>Lemu</span></a>
   <span class="nav-tag">The Muslim Family Summit · November 2026</span>
-  <a href="#tickets" class="nav-cta-btn">Register</a>
+  <a href="#tickets" class="nav-cta-btn reg-btn">Register</a>
 </nav>
 
 <section class="hero" data-screen-label="Hero">
@@ -246,7 +248,7 @@
     </div>
 
     <div class="hero-actions">
-      <a href="#tickets" class="btn-primary">Register Now</a>
+      <a href="#tickets" class="btn-primary reg-btn">Register Now</a>
     </div>
 
     <div class="countdown-wrap">
@@ -428,7 +430,7 @@
       </div>
       <div class="pkg-pricebtn">
         <div class="pkg-price"><span class="now">₦9,000</span></div>
-        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/day1summit" target="_blank" rel="noopener">Register</a></div>
+        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/day1summit" target="_blank" rel="noopener" class="reg-btn">Register</a></div>
       </div>
     </div>
 
@@ -440,7 +442,7 @@
       </div>
       <div class="pkg-pricebtn">
         <div class="pkg-price"><span class="now">₦39,000</span></div>
-        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/day2summit" target="_blank" rel="noopener">Register</a></div>
+        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/day2summit" target="_blank" rel="noopener" class="reg-btn">Register</a></div>
       </div>
     </div>
 
@@ -452,7 +454,7 @@
       </div>
       <div class="pkg-pricebtn">
         <div class="pkg-price"><span class="soon">Price to follow</span></div>
-        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/d3women" target="_blank" rel="noopener">Register</a></div>
+        <div class="pkg-btn"><a href="https://maryamlemu.selar.com/d3women" target="_blank" rel="noopener" class="reg-btn">Register</a></div>
       </div>
     </div>
 
@@ -530,7 +532,7 @@
   <h2>Three days.<br>One <em>home</em> to build.</h2>
   <p>Abuja, 14–16 November 2026. Come and do the work with us.</p>
   <div class="final-actions">
-    <a href="#tickets" class="btn-primary">Register Now</a>
+    <a href="#tickets" class="btn-primary reg-btn">Register Now</a>
     <a href="#donate" class="btn-outline">Donate Instead</a>
   </div>
   <p class="final-note">Enquiries: <a href="mailto:muslimfamilysummit@gmail.com">muslimfamilysummit@gmail.com</a></p>
@@ -553,9 +555,11 @@
     if(!open){btn.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
   }
   function tick(){
+    let anyClosed=false;
     document.querySelectorAll('[data-countdown]').forEach(el=>{
       const target=new Date(el.getAttribute('data-countdown')).getTime();
       let diff=Math.max(0,target-Date.now());
+      if(Date.now()>=target)anyClosed=true;
       const d=Math.floor(diff/86400000);diff-=d*86400000;
       const h=Math.floor(diff/3600000);diff-=h*3600000;
       const m=Math.floor(diff/60000);diff-=m*60000;
@@ -563,6 +567,20 @@
       const pad=n=>String(n).padStart(2,'0');
       const set=(sel,v)=>{const n=el.querySelector(sel);if(n)n.textContent=v};
       set('[data-days]',pad(d));set('[data-hours]',pad(h));set('[data-mins]',pad(m));set('[data-secs]',pad(s));
+    });
+    document.querySelectorAll('.reg-btn').forEach(el=>{
+      if(anyClosed){
+        if(!el.dataset.origText)el.dataset.origText=el.textContent;
+        el.textContent='Sales Closed';
+        el.classList.add('is-closed');
+        el.setAttribute('aria-disabled','true');
+        el.setAttribute('tabindex','-1');
+      }else if(el.classList.contains('is-closed')){
+        el.textContent=el.dataset.origText||el.textContent;
+        el.classList.remove('is-closed');
+        el.removeAttribute('aria-disabled');
+        el.removeAttribute('tabindex');
+      }
     });
   }
   tick();setInterval(tick,1000);
